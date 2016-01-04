@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+    
+  <description>JSTL testClassHandler library</description>
+  <display-name>JSTL testClassHandler</display-name>
+  <tlib-version>1.1</tlib-version>
+  <short-name>TestClassic</short-name>
+  <uri>http://anysite:1234/TestClassicTagHandlerIterationTag</uri>
+
+<!--   <validator>
+    <description>
+        Provides testClassHandler features for JSTL tags.
+    </description>
+    <validator-class>
+        org.apache.taglibs.standard.tlv.JstlCoreTLV
+    </validator-class>
+  </validator> -->
+
+  <tag>
+    <description>
+        testClassHandler Description
+    </description>
+    <name>TestClassic</name>
+    <tag-class>com.test.taghandlers.classic.TestClassicTagHandler</tag-class>
+    <body-content>JSP</body-content>
+    
+    <attribute>
+	    <name>fname</name>
+	    <required>false</required>
+	    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+	    <name>lname</name>
+	    <required>false</required>
+	    <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  <!--   <attribute>
+        <description>
+Name of the exported scoped variable for the
+exception thrown from a nested action. The type of the
+scoped variable is the type of the exception thrown.
+        </description>
+        <name>var</name>
+        <required>false</required>
+        <rtexprvalue>false</rtexprvalue>
+    </attribute> -->
+  </tag>
+
+
+<tag>
+<description>testClassHandler Description Iteration</description>
+<name>testIteration</name>
+<tag-class>com.test.taghandlers.classic.TagClassicHandlerIterationTag</tag-class>
+<body-content>scriptless</body-content>
+<attribute>
+<name>fname</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+<name>lname</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+
+
+<tag>
+<description>testClassHandler Description Iteration</description>
+<name>tagIterationWithBody</name>
+<tag-class>com.test.taghandlers.classic.TagClassicHandlerBodyTag</tag-class>
+<body-content>JSP</body-content>
+<attribute>
+<name>fname</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+<name>lname</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+
+
+<tag>
+<description>SimpleTag testClassHandler Description</description>
+<name>tagSimpleTag</name>
+<tag-class>com.test.taghandlers.simple.SimpleTagHandlerTest</tag-class>
+<body-content>tagdependent</body-content>
+<dynamic-attributes>true</dynamic-attributes>
+<attribute>
+<name>fname</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+<name>lname</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+
+
+<tag>
+<description>SimpleTag With Dynamic Attributes testClassHandler Description</description>
+<name>tagSimpleTagWithDynAttributes</name>
+<tag-class>com.test.taghandlers.simple.SimpleTagWithDynAttributesHandlerTest</tag-class>
+<body-content>tagdependent</body-content>
+<dynamic-attributes>true</dynamic-attributes>
+<attribute>
+<name>fname</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+<name>lname</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+
+
+<tag>
+<description>SimpleTag With Iteration Attributes testClassHandler Description</description>
+<name>tagSimpleTagWithIterationAttributes</name>
+<tag-class>com.test.taghandlers.simple.SimpleTagWithIterationAttributesHandlerTest</tag-class>
+<body-content>tagdependent</body-content>
+<attribute>
+<name>moviesList</name>
+<required>true</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+<name>lname</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+
+
+<tag>
+<description>SimpleTag With SimpleTagSupportWithNoBodyTest testClassHandler Description</description>
+<name>testSimpleTagSupportWithNoBodyTest</name>
+<tag-class>com.test.taghandlers.simple.SimpleTagSupportWithNoBodyTest</tag-class>
+<body-content>empty</body-content>
+<!-- <attribute>
+<name>fname</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+<name>lname</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute> -->
+</tag>
+
+
+<tag>
+<description>SimpleTag With SimpleTagSupportWithBodyTest testClassHandler Description</description>
+<name>testSimpleTagSupportWithBodyTest</name>
+<tag-class>com.test.taghandlers.simple.SimpleTagSupportWithBodyTest</tag-class>
+<body-content>scriptless</body-content>
+</tag>
+
+
+
+</taglib>
