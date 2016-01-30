@@ -3,7 +3,8 @@
 <%@ page buffer="8kb" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%-- <%@page isErrorPage="false" session="false" isThreadSafe="false" %>
- --%><%@ taglib prefix="elTestLibPrefix" uri="http://anysite:1234/TestELTags" %>
+ --%>
+<%@ taglib prefix="elTestLibPrefix" uri="http://anysite:1234/TestELTags" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
